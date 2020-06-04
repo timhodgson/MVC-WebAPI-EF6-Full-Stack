@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MVC Demo</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>List Customers</h2>
+        <p>
+            List customers in the database
+        </p>
+        <p>
+            <button>@Html.ActionLink("List", "Index", "Customer")</button>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Add a customer</h2>
+        <button>@Html.ActionLink("Add", "Add", "Customer")</button>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
